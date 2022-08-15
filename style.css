@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Titillium+Web&display=swap');
+
+/* general declarations  */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 100%;
+    background-color: #fefefe;
+    height: 100vh;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Titillium Web', sans-serif; */
+}
+
+h1, h2, h3{
+    font-family: 'Titillium Web', sans-serif;
+    margin: 5px;
+    padding: 10px;
+}
+
+p{
+    padding: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas: 'nav header header header'
+                         'nav main section aside '
+                         'nav main1 section1 aside1 '
+                         'nav main2 section2 aside2 '
+                         'nav footer footer footer';
+}
+
+.header, .nav, .aside, .aside1, .aside2, .main, .main1, .main2, .section, .section1, .section2, .footer{
+    padding: 10px;
+    border: 1px groove #12eedd;
+    background-color: #545354;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
+    color: rgb(206, 199, 190);
+}
+
+.header{
+    grid-area: header;
+}
+
+.nav{
+    grid-area: nav;
+}
+
+.section{
+    grid-area: main;
+}
+
+.main{
+    grid-area: section;
+}
+
+.aside{
+    grid-area: aside;
+}
+
+.section1{
+    grid-area: main1;
+}
+
+.main1{
+    grid-area: section1;
+}
+
+.aside1{
+    grid-area: aside1;
+}
+
+.section2{
+    grid-area: main2;
+}
+
+.main2{
+    grid-area: section2;
+}
+
+.aside2{
+    grid-area: aside2;
+}
+
+.footer{
+    grid-area: footer;
+}
